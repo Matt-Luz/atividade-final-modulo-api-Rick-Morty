@@ -29,10 +29,8 @@ async function characterSearch(page = 1, name = "") {
     } catch (error) {
         console.log("Erro ao buscar personagem:", error);
     };
-
     
 };
-
 
 function showCharacters(characters) {
     charactersList.innerHTML = '';
