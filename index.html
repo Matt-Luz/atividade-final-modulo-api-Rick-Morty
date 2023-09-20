@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>API Rick & Morty</title>
+</head>
+<body>
+
+    <header class="navbar">
+        <img class="img-nav" src="./img/pngaaa.com-521974.png" alt="rick and Morty portal" srcset="">
+        <img class="title-page" src="./img/logo.png" alt="logo Rick and Morty" srcset="">
+        <img class="img-nav" src="./img/pngaaa.com-521963.png" alt="icone rick and morty" srcset="">
+    </header>
+
+    <main>
+        <input type="text" id="searchCharacters" placeholder="Buscar personagens">
+
+        <div class="pagination" id="pagination">
+            <button id="previous">Anterior</button>
+            <button id="next">Próxima</button>
+        </div>
+
+        <div class="characters" id="charactersList"></div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
