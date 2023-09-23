@@ -127,7 +127,7 @@ main {
   .pagination button {
     background-color: #087F5B;
     color: #fff;
-    border: solid 1px black;
+    border: solid 2px black;
     padding: 10px 15px;
     margin: 0 20px;
     cursor: pointer;
@@ -140,9 +140,9 @@ main {
     cursor: not-allowed;
   }
 
-  .pagination button:hover {
+  /* .pagination button:hover {
     background-color: grey;
-  }
+  } */
   
   .status-alive:before {
     content: '';
