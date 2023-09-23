@@ -85,7 +85,7 @@ main {
     box-shadow: 0px 8px 24px 0 rgba(29, 140, 242, 0.16);
     transition: filter 0.2s ease-in-out;
     margin-bottom: 20px;
-    width: 100%;
+    width: 90%;
 }
 
 .card:hover{
@@ -135,14 +135,19 @@ main {
     border-radius: 8px;
   }
 
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
   .pagination button:hover {
     background-color: grey;
   }
   
   .status-alive:before {
     content: '';
-    height: 0.5rem;
-    width: 0.5rem;
+    height: 0.7rem;
+    width: 0.7rem;
     margin-right: 0.375rem;
     background: rgb(85, 204, 68);
     border-radius: 50%;
@@ -151,10 +156,20 @@ main {
   
   .status-dead:before {
     content: '';
-    height: 0.5rem;
-    width: 0.5rem;
+    height: 0.7rem;
+    width: 0.7rem;
     margin-right: 0.375rem;
     background: rgb(214, 61, 46);
+    border-radius: 50%;
+    display: block;
+  }
+
+  .status-unknown:before {
+    content: '';
+    height: 0.7rem;
+    width: 0.7rem;
+    margin-right: 0.375rem;
+    background: rgb(9, 23, 90);
     border-radius: 50%;
     display: block;
   }

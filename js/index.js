@@ -19,6 +19,9 @@ async function characterSearch(page = 1, name = "") {
       params,
     });
 
+    btnPrevious.disabled = true
+    btnNext.disabled = true
+
     const characters = response.data.results;
     info = response.data.info;
 
@@ -38,15 +41,29 @@ function showCharacters(characters) {
     const card = document.createElement("div");
     card.classList.add("card");
 
+    let statusClass;
+
+    if (character.status === "Alive") {
+      statusClass = 'status-alive'
+    } else if (character.status === "Dead") {
+      statusClass = 'status-dead'
+    } else if (character.status === "unknown") {
+      statusClass = 'status-unknown'
+    };
+
     card.innerHTML = `
         <img src = "${character.image}" />
         <h2>${character.name}</h2>
-        <p>${character.status} - ${character.species}</p>
+        <p class="${statusClass}">${character.status} - ${character.species}</p>
         <p>Last location:</p>
         <p>${character.location.name}</p>
         `;
 
     charactersList.appendChild(card);
+
+    btnPrevious.disabled = info.prev ? false : true
+    btnNext.disabled = info.next ? false : true
+
   });
 }
 
