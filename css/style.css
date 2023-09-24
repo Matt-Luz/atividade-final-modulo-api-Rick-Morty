@@ -31,7 +31,6 @@ body {
 .title-page {
     height: 17vh;
     margin-top: 10px;
-    
 }
 
 /* Main */
@@ -85,17 +84,22 @@ main {
     box-shadow: 0px 8px 24px 0 rgba(29, 140, 242, 0.16);
     transition: filter 0.2s ease-in-out;
     margin-bottom: 20px;
-    width: 90%;
+    width: 95%;
 }
 
 .card:hover{
-    background-color: aquamarine;
+    background-image: url(../img/pxfuel.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    transition: linear 1.5s;
 }
 
 .card img {
     border-radius: 8px;
     max-width: 100%;
-    height: 150px;
+    height: 180px;
     margin-bottom: 1rem
 }
 
@@ -106,10 +110,10 @@ main {
   
 .card p {
     margin-bottom: 0.5rem;
-    color: #666;
     display: flex;
     align-items: center;
     text-align: center;
+    font-weight: bolder;
 }
 
 /* Estilo para a div de paginação */
@@ -139,17 +143,13 @@ main {
     background-color: #ccc;
     cursor: not-allowed;
   }
-
-  /* .pagination button:hover {
-    background-color: grey;
-  } */
   
   .status-alive:before {
     content: '';
     height: 0.7rem;
     width: 0.7rem;
     margin-right: 0.375rem;
-    background: rgb(85, 204, 68);
+    background: yellowgreen;
     border-radius: 50%;
     display: block;
   }
@@ -189,3 +189,191 @@ footer {
     font-size: small;
 }
 
+#social {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Media querys */
+
+@media only screen and (max-width: 1100px) {
+    .navbar {
+        height: 20vh;
+        width: 100%;
+    }
+
+    .img-nav {
+        height: 20vh;
+        width: 20vw;
+    }
+    
+    .title-page {
+        height: 17vh;
+        width: 50%;
+    }
+
+    .characters {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .img-nav {
+        height: 20vh;
+        width: 20vw;
+    }
+    
+    .title-page {
+        height: 17vh;
+        width: 50vw;
+    }
+
+    .characters {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .navbar {
+        height: 20vh;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .img-nav {
+        display: none;
+    }
+    
+    .title-page {
+        height: 17vh;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .navbar {
+        height: 20vh;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .img-nav {
+        display: none;
+    }
+    
+    .title-page {
+        height: 17vh;
+        width: 80%;
+    }
+
+    .characters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .navbar {
+        height: 20vh;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .img-nav {
+        display: none;
+    }
+    
+    .title-page {
+        height: 17vh;
+        width: 80%;
+    }
+
+    #searchCharacters {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #searchCharacters {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .navbar {
+        height: 20vh;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .img-nav {
+        display: none;
+    }
+    
+    .title-page {
+        height: 17vh;
+        width: 80%;
+    }
+
+    #searchCharacters {
+        width: 300px;
+    }
+
+    .characters {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pagination button {
+        margin: 0 10px;
+    }
+
+    .card {
+        margin: 10px 50px 0;
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #searchCharacters {
+        width: 250px;
+    }
+
+    .card {
+        margin: 10px 30px 0;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .navbar {
+        height: 20vh;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .img-nav {
+        display: none;
+    }
+    
+    .title-page {
+        height: 17vh;
+        width: 80%;
+    }
+
+    #searchCharacters {
+        width: 200px;
+    }
+
+    .characters {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pagination button {
+        margin: 0 5px;
+    }
+
+    .card {
+        margin: 10px 25px 0;
+        width: 75%;
+    }
+}
