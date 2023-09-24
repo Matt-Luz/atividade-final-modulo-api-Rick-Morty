@@ -29,7 +29,7 @@ Criada uma aplicação web para listagem dos personagens da série Rick and Mort
 - Paginação
 
 
-<h3>Link do deploy da aplicação: <a href="https://matt-luz.github.io/atividade-final-modulo-api-Rick-Morty/">CLIQUE AQUI</a></h3>
+<h3>Link do deploy da aplicação: <a href="https://matt-luz.github.io/atividade-final-modulo-api-Rick-Morty/" target="_blank">CLIQUE AQUI</a></h3>
 
 ![Rick and Morty saindo do portal](./img/4508753-rick-sanchez-morty-smith-rick-and-morty-tv.png)
 
